@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 body {
 	margin: 0;
 	padding:0;
@@ -9,10 +11,11 @@ body {
 	background-image: url(img/first.jpg);
 	height: 100vh;
 	background-position: center;
-	-webkit-background-size: cover;
 	background-size: cover;
 	color: white;
 	padding-top: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 		padding-bottom: 50px;
 
@@ -46,10 +49,16 @@ article {
 
 
 .menu__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;	
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;	
 	-ms-align-items: 	center;
-	align-items: 	center;
+	-webkit-box-align: 	center;
+	    -ms-flex-align: 	center;
+	        align-items: 	center;
 }
 
 .logo {
@@ -85,7 +94,6 @@ article {
 
 #second {
 	background-image: url(img/fri.jpg);
-	-webkit-background-size: cover;
 	background-size: cover;
 		padding-bottom: 50px;
 
@@ -102,7 +110,9 @@ img {
 }
 
 .wrapper {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 25px 1fr 25px 1fr;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 25px;
 	grid-auto-rows: minmax(230px, auto)
@@ -129,7 +139,6 @@ h3, p {
 
 #four {
 	background-image: url(img/limonade.jpg);
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
 		padding-bottom: 50px;
@@ -165,7 +174,7 @@ h3, p {
 	
 
 	.btn1 {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	h1 {
@@ -173,6 +182,7 @@ h3, p {
 	}
 
 	.wrapper {
+		-ms-grid-columns: 1fr;
 		grid-template-columns: repeat(1	, 1fr);
 		grid-gap: 45px;
 		grid-auto-rows: minmax(230px, auto)
@@ -196,7 +206,7 @@ h3, p {
 	
 
 	.btn1 {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	h1 {
@@ -204,6 +214,7 @@ h3, p {
 	}
 
 	.wrapper {
+		-ms-grid-columns: 1fr;
 		grid-template-columns: repeat(1	, 1fr);
 		grid-gap: 45px;
 		grid-auto-rows: minmax(230px, auto)
