@@ -179,3 +179,35 @@ h3, p {
 		grid-auto-rows: minmax(230px, auto)
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	
+	#first, #second, #third, #four {
+		text-align: center;
+	}
+	
+	h3, p {
+		padding: 0 25px;
+	}
+	.menu > a {
+		font-size: 60px;
+	}
+
+	h1 {
+		font-size: 46px;
+		line-height: 65px;
+	}
+	
+
+	.btn1 {
+		font-size: 20px;
+	}
+
+
+
+	.wrapper {
+		grid-template-columns: repeat(1	, 1fr);
+		grid-gap: 45px;
+		grid-auto-rows: minmax(230px, auto)
+	}
+}
